@@ -1,0 +1,28 @@
+
+::ng-deep .p-tabview .p-tabview-nav li {
+  list-style-type: none; 
+  cursor: pointer;
+}
+::ng-deep .p-tabview .p-tabview-nav {
+  padding: 0 !important;
+}
+::ng-deep .p-tabview .p-tabview-nav li a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+::ng-deep .p-tabview .p-tabview-nav li a:hover {
+
+  text-decoration: none; 
+}
+
+
+::ng-deep .p-tabview .p-tabview-nav li.p-highlight {
+  background-color: #007ad9;
+  color: white; 
+}
+
+::ng-deep .p-tabview .p-tabview-nav li {
+  cursor: pointer;
+}
+  

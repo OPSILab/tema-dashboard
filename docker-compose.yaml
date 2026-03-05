@@ -1,0 +1,33 @@
+services:
+  tema:
+    build: .
+    hostname: tema
+    container_name: tema-portal
+    ports:
+      - '127.0.0.1:4200:1026'
+    volumes:
+      - ./config.json:/usr/share/nginx/html/assets/config.json
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    # depends_on:
+    #   - nginx
+    # networks:
+    #   - default
+  
+  # nginx:
+  #   image: nginx:latest
+  #   hostname: nginx
+  #   container_name: nginx
+  #   ports:
+  #     - "443:443"
+  #   networks:
+  #     - default
+  #   volumes:
+  #     - ./nginx_docker.conf:/etc/nginx/nginx.conf
+  #     - ./temaCertificato.crt:/etc/nginx/temaCertificato.crt
+  #     - ./tema.key:/etc/nginx/tema.key
+      
+# networks:
+#   default:
+#     external:
+#       name: nginx_network_tema
+

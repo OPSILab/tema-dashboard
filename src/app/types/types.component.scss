@@ -1,0 +1,42 @@
+
+.mat-tab-group {
+  margin-bottom: 48px;
+}
+
+/* Stili per il pulsante di azione */
+.action-button {
+padding: 0.25rem 0.5rem; /* Regola il padding per rendere il pulsante più piccolo */
+font-size: 0.75rem; /* Riduci la dimensione del testo */
+}
+
+/* Posizionamento del pulsante di azione */
+.action-container {
+  display: flex;
+  justify-content: center; /* Centra il contenitore del pulsante */
+  padding-left: 200px !important;
+}
+
+/* Applica lo stile al pulsante all'interno del p-template "body" */
+.p-datatable .p-datatable-tbody .action-button {
+  margin: auto; /* Centra il pulsante */
+}
+
+.centrato {
+  position: fixed;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+
+:host ::ng-deep {
+  .p-datatable .p-datatable-tbody > tr > td {
+    border-top: 0px solid hwb(0 75% 24%) !important; /* Aggiunge un bordo alla parte superiore della cella */
+    border-left: none !important; /* Rimuove il bordo sinistro della cella */
+    border-right: none !important; /* Rimuove il bordo destro della cella */
+
+  }
+}
+
+
+

@@ -1,0 +1,40 @@
+@import '~primeicons/primeicons.css';
+@import '~leaflet-geosearch/assets/css/leaflet.css';
+@import url('~cesium/Build/Cesium/Widgets/widgets.css');
+ngx-airflow.ng-star-inserted {
+  width: 100%;
+  height: 100%;
+}
+ngx-amministration.ng-star-inserted {
+    width: 100%;
+    height: 100%;
+  }
+  ngx-min-io.ng-star-inserted{
+    width: 100%;
+    height: 100%;
+  }
+  ngx-fire-missions.ng-star-inserted{
+    width: 100%;
+    height: 100%;
+  }
+  ngx-operative.ng-star-inserted{
+    width: 100%;
+    height: 100%;
+  }
+
+  .custom-toast .p-toast-message {
+    display: inline-block;
+    max-width: 100%;
+    word-wrap: break-word;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #000; /* Colore del testo */
+    opacity: 10;
+}
+
+.custom-toast .toast-content {
+    display: inline-block;
+    background: inherit; 
+    color: inherit; 
+}

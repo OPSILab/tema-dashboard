@@ -1,0 +1,14 @@
+<div class="cesiumContainer">
+  <label for="tileset-select" class="custom-label">Seleziona un Tileset:</label>
+  <p-dropdown class="custom-label" id="tileset-select" [(ngModel)]="selectedTileset" (onChange)="cesiumLoad()" [options]="tilesets"></p-dropdown>
+
+  <div id="cesiumContainer"></div>
+  <div *ngIf="isLoading" class="overlay">
+    <p>Loading...</p>
+  </div>
+</div>
+
+
+
+
+  

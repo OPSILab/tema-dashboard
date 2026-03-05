@@ -1,0 +1,17 @@
+<p-tabView (onChange)="onTabChange($event)">
+  <p-tabPanel header="Entity">
+    <ng-container *ngIf="activeTab === 'entity'">
+      <app-entity></app-entity>
+    </ng-container>
+  </p-tabPanel>
+  <p-tabPanel header="Types">
+    <ng-container *ngIf="activeTab === 'types'">
+      <app-types></app-types>
+    </ng-container>
+  </p-tabPanel>
+  <p-tabPanel header="Subscriptions">
+    <ng-container *ngIf="activeTab === 'subscriptions'">
+      <app-subscription></app-subscription>
+    </ng-container>
+  </p-tabPanel>
+</p-tabView>

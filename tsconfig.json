@@ -1,0 +1,41 @@
+{
+  "compileOnSave": false,
+  "include": [
+    "src/**/*.ts",
+    "src/polyfills.ts"
+  ],
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "module": "ES2020",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "target": "ES2022",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "ES2020",
+      "dom"
+    ],
+    "plugins": [
+      {
+        "name": "tslint-language-service"
+      }
+    ],
+    "useDefineForClassFields": false,
+    "baseUrl": "./src",
+    "paths": {
+      "cesium": [
+        "node_modules/cesium/Source"
+      ]
+    }
+  }
+}
+
